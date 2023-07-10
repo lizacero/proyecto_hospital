@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Centro Médico<</title>
+    <link rel="stylesheet" href="/stylesheets/style-formulario.css">
+</head>
+
+<body>
+    <header>
+        <h1>CENTRO MEDICO BACKEND</h1>
+    </header>
+    <main class="pages">
+        <form action="./agregar" method="post">
+            <h2>REGISTRO DE MEDICOS</h2>
+            <label for="nombreM">Nombre:<span> *</span></label>
+            <input type="text" id="nombreM" name="nombreM" required><br>
+            <label for="apellidoM">Apellido:<span> *</span></label>
+            <input type="text" id="apellidoM" name="apellidoM" required><br>
+            <label for="cedulaM">Número de Cédula:<span> *</span></label>
+            <input type="text" id="cedulaM" name="cedulaM" required><br>
+            <label for="consultorio">Consultorio:<span> *</span></label>
+            <input type="text" id="consultorio" name="consultorio" required><br>
+            <label for="correo">Correo de contacto:<span> *</span></label>
+            <input type="text" id="correo" name="correo" required><br>
+            <label for="especialidad">Especialidad:<span> *</span></label>
+            <select id="especialidad" name="especialidad" required>
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiologia">Cardiología</option>
+                <option value="Medicina interna">Medicina interna</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Rehabilitación Física">Rehabilitación Física</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiología">Radiología</option>
+            </select><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+
+</html>
